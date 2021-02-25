@@ -1,0 +1,58 @@
+
+
+#define BACKGROUND       #000000
+#define FOREGROUND       #dfffff
+
+#define COLOR0   #000000
+!dark pink
+#define COLOR1   #ff87af
+!light orange
+#define COLOR2   #ffaf5f
+!dark orange
+#define COLOR3   #d75f00
+!dark cyan 
+#define COLOR4   #008080
+!dark purple
+#define COLOR5   #870087
+!cyan
+#define COLOR6   #00ffff
+!light gray
+#define COLOR7   #c0c0c0
+
+!gray
+#define COLOR8   #808080
+!pink
+#define COLOR9   #ff005f
+!x-light orange
+#define COLOR10  #ffdfaf
+!orange
+#define COLOR11  #ff8700
+!light cyan
+#define COLOR12  #afffff
+!bright purple
+#define COLOR13  #d700ff
+!x-light cyan
+#define COLOR14  #dfffff
+
+#define COLOR15  #ffffff
+
+!COLOR10 #ffdfaf
+!COLOR2  #ffaf5f
+!COLOR11 #ff8700
+!COLOR3  #d75f00
+
+!COLOR14 #afffff
+!COLOR12 #00ffff
+!COLOR6  #00d7d7
+!COLOR4  #008787
+
+!COLOR15 #ffffff
+!COLOR7  #c0c0c0
+!COLOR8  #808080
+!COLOR0  #000000
+
+!COLOR13 #d700ff
+!COLOR5  #870087
+
+!COLOR1  #ff87af
+!COLOR9  #ff005f
