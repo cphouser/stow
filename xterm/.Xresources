@@ -1,29 +1,5 @@
+! custom colors
 #include ".Xresources.d/colorscheme"
-
-XTerm*termName:		xterm-256color
-XTerm*bellIsUrgent: true
-!xterm*font:		-*-courier-medium-r-*-*-12-*-100-*-*-*-iso10646-1
-!xterm*font:           -*-courier-medium-r-*-*-12-*-*-*-*-*-iso10646-1
-!xterm*font: -bitstream-courier 10 pitch-medium-r-*-*-*-*-0-*-*-*-*-standard
-xterm*boldMode: true
-xterm*boldColors: false
-!xterm*boldFont: -bitstream-courier 10 pitch-bold-r-*-*-*-*-0-*-*-*-*-standard    
-!xterm*boldFont:  -*-courier-bold-r-*-*-12-*-100-*-*-*-iso10646-1
-xterm*faceName:   Courier New
-xterm*faceSize:   10
-xterm*allowBoldFonts: true
-
-!fix antialiasing
-xterm.Xft.dpi: 87
-Xft.antialias: false 
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintnone
-Xft.lcdfilter: lcddefault
-
-
-
 xterm*background: BACKGROUND
 xterm*foreground: FOREGROUND
 
@@ -44,6 +20,29 @@ xterm*color12: COLOR12
 xterm*color13: COLOR13
 xterm*color14: COLOR14
 xterm*color15: COLOR15
+
+! font settings
+XTerm*termName:		xterm-256color
+XTerm*bellIsUrgent: true
+!xterm*font:           -*-courier-medium-r-*-*-12-*-*-*-*-*-iso10646-1
+!xterm*boldFont:  -*-courier-bold-r-*-*-12-*-100-*-*-*-iso10646-1
+!xterm*font: -bitstream-courier 10 pitch-medium-r-*-*-*-*-0-*-*-*-*-standard
+!xterm*boldFont: -bitstream-courier 10 pitch-bold-r-*-*-*-*-0-*-*-*-*-standard    
+xterm*boldMode: true
+xterm*boldColors: false
+xterm*faceName:   Courier New
+xterm*faceSize:   10
+xterm*allowBoldFonts: true
+
+!fix antialiasing
+xterm.Xft.dpi: 87
+Xft.antialias: false 
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintnone
+Xft.lcdfilter: lcddefault
+
 
 ! fixes alt/meta
 XTerm*eightBitOutput: true
