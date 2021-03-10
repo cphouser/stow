@@ -1,8 +1,8 @@
-#include "/home/xeroxcat/.colorscheme"
+#include ".Xresources.d/colorscheme"
 
 XTerm*termName:		xterm-256color
-!xterm*font:		-*-courier-medium-r-*-*-12-*-100-*-*-*-iso10646-1
 XTerm*bellIsUrgent: true
+!xterm*font:		-*-courier-medium-r-*-*-12-*-100-*-*-*-iso10646-1
 !xterm*font:           -*-courier-medium-r-*-*-12-*-*-*-*-*-iso10646-1
 !xterm*font: -bitstream-courier 10 pitch-medium-r-*-*-*-*-0-*-*-*-*-standard
 xterm*boldMode: true
@@ -10,9 +10,9 @@ xterm*boldColors: false
 !xterm*boldFont: -bitstream-courier 10 pitch-bold-r-*-*-*-*-0-*-*-*-*-standard    
 !xterm*boldFont:  -*-courier-bold-r-*-*-12-*-100-*-*-*-iso10646-1
 xterm*faceName:   Courier New
-!XTerm*allowBoldFonts: false
 xterm*faceSize:   10
 xterm*allowBoldFonts: true
+
 !fix antialiasing
 xterm.Xft.dpi: 87
 Xft.antialias: false 
@@ -48,4 +48,3 @@ xterm*color15: COLOR15
 ! fixes alt/meta
 XTerm*eightBitOutput: true
 XTerm*eightBitInput: false
-! xeroxcat@PSEUDOCRAFT:~$ 

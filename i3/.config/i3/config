@@ -182,9 +182,9 @@ bar {
 
 default_border normal
 hide_edge_borders smart
-# font pango:Courier New Bold 9
+font pango:Courier New Bold 10
 #font -bitstream-courier 10 pitch-meduim-r-*-*-*-*-0-*-*-*-*-standard
-font -*-courier-medium-r-*-*-14-*-100-*-*-*-iso10646-1
+#font -*-courier-medium-r-*-*-14-*-100-*-*-*-iso10646-1
 
 # class                 border  backgr. text    indicator child_border
 client.focused          $COLOR11 $COLOR0 $COLOR2  $COLOR11 $COLOR0
