@@ -35,7 +35,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
 
 
 ;; Here are some additional functions/macros that could help you configure Doom:
@@ -76,3 +76,7 @@
 (use-package! ttl-mode
   :mode "\\.n3$"
   :mode "\\.ttl$")
+
+(map! :map evil-normal-state-map
+      "zz" 'evil-toggle-fold)
+;;; config.el ends here
