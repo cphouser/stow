@@ -1,29 +1,5 @@
-#include "/home/xeroxcat/.colorscheme"
-
-XTerm*termName:		xterm-256color
-!xterm*font:		-*-courier-medium-r-*-*-12-*-100-*-*-*-iso10646-1
-XTerm*bellIsUrgent: true
-!xterm*font:           -*-courier-medium-r-*-*-12-*-*-*-*-*-iso10646-1
-!xterm*font: -bitstream-courier 10 pitch-medium-r-*-*-*-*-0-*-*-*-*-standard
-xterm*boldMode: true
-xterm*boldColors: false
-!xterm*boldFont: -bitstream-courier 10 pitch-bold-r-*-*-*-*-0-*-*-*-*-standard    
-!xterm*boldFont:  -*-courier-bold-r-*-*-12-*-100-*-*-*-iso10646-1
-xterm*faceName:   Courier New
-!XTerm*allowBoldFonts: false
-xterm*faceSize:   10
-xterm*allowBoldFonts: true
-!fix antialiasing
-xterm.Xft.dpi: 87
-Xft.antialias: false 
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintnone
-Xft.lcdfilter: lcddefault
-
-
-
+! custom colors
+#include ".Xresources.d/colorscheme"
 xterm*background: BACKGROUND
 xterm*foreground: FOREGROUND
 
@@ -35,7 +11,6 @@ xterm*color4:  COLOR4
 xterm*color5:  COLOR5
 xterm*color6:  COLOR6
 xterm*color7:  COLOR7
-
 xterm*color8:  COLOR8
 xterm*color9:  COLOR9
 xterm*color10: COLOR10
@@ -45,7 +20,30 @@ xterm*color13: COLOR13
 xterm*color14: COLOR14
 xterm*color15: COLOR15
 
+XTerm*bellIsUrgent: true
+
+! font settings
+XTerm*termName:		xterm-256color
+!xterm*font:           -*-courier-medium-r-*-*-12-*-*-*-*-*-iso10646-1
+!xterm*boldFont:  -*-courier-bold-r-*-*-12-*-100-*-*-*-iso10646-1
+!xterm*font: -bitstream-courier 10 pitch-medium-r-*-*-*-*-0-*-*-*-*-standard
+!xterm*boldFont: -bitstream-courier 10 pitch-bold-r-*-*-*-*-0-*-*-*-*-standard    
+xterm*boldMode: true
+xterm*boldColors: false
+xterm*faceName:   Courier New
+xterm*faceSize:   10
+xterm*allowBoldFonts: true
+
+!fix antialiasing
+xterm.Xft.dpi: 87
+Xft.antialias: false 
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintnone
+Xft.lcdfilter: lcddefault
+
+
 ! fixes alt/meta
 XTerm*eightBitOutput: true
 XTerm*eightBitInput: false
-! xeroxcat@PSEUDOCRAFT:~$ 
