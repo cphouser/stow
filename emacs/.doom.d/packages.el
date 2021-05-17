@@ -49,8 +49,14 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 
+;;; Code:
+(package! prolog
+  :recipe (:local-repo "packages"))
+
 (package! buffer-move)
 
 ;; turtle syntax https://github.com/jeeger/ttl-mode
 (package! ttl-mode
   :recipe (:host github :repo "jeeger/ttl-mode"))
+
+;;; packages.el ends here

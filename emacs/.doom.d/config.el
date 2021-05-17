@@ -28,15 +28,13 @@
 ;;(setq doom-theme 'doom-one)
 (setq doom-theme 'spacemax-dark)
 
-
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq org-directory "~/Dropbox/org/")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
-
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
@@ -66,6 +64,18 @@
       "<S-right>" '+evil/window-move-right
       )
 
+
+;(setq load-path (cons "/usr/lib/xemacs/site-lisp" load-path))
+(autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
+(autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
+(autoload 'mercury-mode "prolog" "Major mode for editing Mercury programs." t)
+(setq prolog-system 'swi)  ; optional, the system you are using;
+                           ; see `prolog-system' below for possible values
+(setq auto-mode-alist (append '(("\\.pl$" . prolog-mode)
+                                ("\\.m$" . mercury-mode))
+                               auto-mode-alist))
+
+;; Autocomplete with explicit CTL-SPACE only
 ;(after! company-mode
 (setq! company-idle-delay nil)
 ;;)
@@ -79,4 +89,8 @@
 
 (map! :map evil-normal-state-map
       "zz" 'evil-toggle-fold)
+
+(remove-hook 'doom-first-buffer-hook #'smartparens-global-mode)
+
+(xterm-mouse-mode t)
 ;;; config.el ends here
