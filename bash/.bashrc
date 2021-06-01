@@ -10,7 +10,7 @@ if [ -f ~/.fetch_shell ]; then
 fi
 
 if [ -f ~/.laptop_shell ]; then
-    . ~/.labtop_shell
+    . ~/.laptop_shell
 fi
 
 ##      VV ~~DEFAULT PREFERENCES~~ VV
