@@ -1,0 +1,1 @@
+prolog.el 1.28 https://bruda.ca/_media/emacs/prolog.el

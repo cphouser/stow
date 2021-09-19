@@ -1,0 +1,22 @@
+#!/usr/bin/sh
+
+
+#https://superuser.com/a/152046
+#cd /path/to/folderA
+#folderB_temp="$(mktemp -d -t folderB.XXXXXX)"
+#mv folderB "$folderB_temp"
+#find "$folderB_temp/folderB" -maxdepth 1 -mindepth 1 -exec mv {} . \;
+#rmdir --parents --ignore-fail-on-non-empty "$folderB_temp/folderB"
+
+folderB_path="$(ls $PWD/$1)"
+if [ -d "$PWD/$1" ]
+  then
+    folder_temp="$(mktemp -d -t $1.XXXXXX)"
+    mv "$1" "$folder_temp"
+    find "$folder_temp/$1" -maxdepth 1 -mindepth 1 -exec mv {} . \;
+    rmdir --parents --ignore-fail-on-non-empty "$folder_temp/$1"
+  else
+    echo "no action"
+fi
+
+
