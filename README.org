@@ -1,0 +1,7 @@
+
+* setup notes
+** dependencies?
+*** emacs
+
+** install order
+

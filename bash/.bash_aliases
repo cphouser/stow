@@ -13,4 +13,3 @@ alias venv='python3 -m venv'
 
 alias python='python3'
 
-alias sshup='ssh calvinhouser@10.100.1.194'
