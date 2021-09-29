@@ -1,7 +1,72 @@
 
 * setup notes
 ** dependencies?
+things i'll always need that we can get from apt
+
+emacs is 27.1 as of bullseye (doom is happy)
+none of these were on the debian server install but might be there otherwise in standard install config
+#+BEGIN_SRC sh
+sudo apt install vim git emacs stow
+#+END_SRC
+
+*** add user to sudoers
+#+BEGIN_SRC sh
+# as root add below to /etc/sudoers
+username ALL=(ALL) ALL
+# edit the file w/ below (checks syntax before write)
+visudo
+#+END_SRC
+
+
+*** add nonfree repositories
+just add =non-free= to each line. add =contrib= too if it isn't present.
+should all end in =main contrib non-free=
+
+
+*** get an ssh key for github
+
+#+BEGIN_SRC sh
+ssh-keygen -t ed25519 -C "cphouser@gmail.com"
+eval `ssh-agent -s`
+#+END_SRC
+
+add =~/.ssh/id_ed25519.pub= to [[https://github.com/settings/keys]]
+
+
 *** emacs
+copies from doom-emacs install instructions:
+#+BEGIN_SRC sh
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+#+END_SRC
+
 
 ** install order
+*** bash
+really should go first
+#+BEGIN_SRC sh
+# make these folders first so they aren't just symlinks
+mkdir ~/.local; mkdir ~/.local/bin; rm ~/.bashrc ~/.profile
+cd ~/stow; stow bash; exec bash
+#+END_SRC
 
+**** addendums
+adds aliases for connecting to the Fetch VPN w/ nmcli
+check out the wiki page for how to set that up
+
+
+*** emacs
+early to view this document nicely
+#+BEGIN_SRC sh
+rm -r ~/.doom.d
+stow emacs
+ln -s "$HOME/.emacs.d/bin/doom" "$HOME/.local/bin/doom"
+doom sync
+#+END_SRC
+
+*** =stow vim=
+
+*** =stow xterm=
+
+*** i3
+detail this later - important to come after xterm since we source the colorscheme file from it
