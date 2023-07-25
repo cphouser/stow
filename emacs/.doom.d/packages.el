@@ -59,4 +59,6 @@
 (package! ttl-mode
   :recipe (:host github :repo "jeeger/ttl-mode"))
 
+(package! ein)
+
 ;;; packages.el ends here
